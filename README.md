@@ -1,1 +1,1 @@
-# DAOhaus User Guide
+# DAOhaus Developer/Technical Docs
