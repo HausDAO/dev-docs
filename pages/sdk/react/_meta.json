@@ -1,9 +1,0 @@
-{
-  "connect": "connect",
-  "moloch-v3-hooks": "moloch-v3-hooks",
-  "moloch-v3-macro-ui": "moloch-v3-macro-ui",
-  "form-builder": "form-builder",
-  "tx-builder": "tx-builder",
-  "moloch-v3-legos": "moloch-v3-legos",
-  "moloch-v3-fields": "moloch-v3-fields"
-}

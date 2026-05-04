@@ -8,11 +8,11 @@
 
 **☢️☢️ _DANGER ZONE_ ☢️☢️**
 
-Because these subgraphs are deep in the foundation of the DAOhaus protocol, changes can reverberate throughout the SDK and all apps built with it, so we need to be careful when making updates. It's usually best not to make subgraph code changes unless absolutely necessary. If you do make changes, all side effects should be assessed and tested before propagating throughout the protocol! Deployment to non-test subgraphs should happen all at the same time. The SDK and apps are making the same queries, so if a change happens in one subgraph and a query is updated, it'll break in the subgraph that isn't deployed.
+Because these subgraphs are deep in the foundation of the DAOhaus protocol, changes can reverberate throughout all apps built on the protocol, so we need to be careful when making updates. It's usually best not to make subgraph code changes unless absolutely necessary. If you do make changes, all side effects should be assessed and tested before propagating throughout the protocol! Deployment to non-test subgraphs should happen all at the same time. All apps are making the same queries, so if a change happens in one subgraph and a query is updated, it'll break in the subgraph that isn't deployed.
 
 **Dangerous changes include**
 
-- Removing fields that the SDK or apps might be relying on
+- Removing fields that apps might be relying on
 - Changing field types
 
 **Safer changes include**

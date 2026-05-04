@@ -1,0 +1,53 @@
+# Write a Shaman
+
+Shamans are special admin contracts designed for automating DAO features. If you're curious where to find them, head over to the [HausDAO](https://github.com/HausDAO) organization on Github.
+
+## Permissions
+
+Shamans are special roles within the DAO. There are several levels of permissions to be aware of:
+
+- **Admin**: Has the power to pause or unpause tokens.
+- **Governor**: Is in charge of adjusting governance configurations and can cancel proposals.
+- **Manager**: Plays the role of minting and burning tokens.
+
+## Repositories
+
+First is the [baal-tokens](https://github.com/HausDAO/baal-tokens) repository. It's primarily used for creating shamans and experimentation. If you're looking to set up a new DAO with multiple shamans, this repo will be especially helpful. It supports custom tokens using a factory pattern.
+
+Next up, we have the [baal-shamans](https://github.com/HausDAO/baal-shamans) repository. This has a treasure trove of examples and is essentially the precursor to 'Baal Tokens'.
+
+### Baal Tokens
+
+Fork the 'Baal Tokens' repo to experiment.
+
+```bash
+git clone https://github.com/HausDAO/baal-tokens.git
+```
+
+Familiarize yourself with its layout and purpose. Here you'll find configurations for summoners, tokens, and shamans, and also get introduced to higher-order summoners or factories.
+
+### Baal Shamans
+
+Fork and clone the 'Baal Shamans' repo locally.
+
+```bash
+git clone https://github.com/HausDAO/baal-shamans.git
+```
+
+For initialization, use `pnpm`, which operates similarly to `npm` or `yarn`. Check out the 'ETH Onboarder' ([EthOnboarder.sol](https://github.com/HausDAO/baal-shamans/blob/main/contracts/onboarder/EthOnboarder.sol)) shaman. Spend some time understanding its functions, especially how it mints shares or loot.
+
+Ready for customization? Start with the iBaal interface from the [Baal repository](https://github.com/HausDAO/Baal). Feel free to integrate functionalities from OpenZeppelin, give your shaman a unique name, and set those public variables for frontend interactions.
+
+## Testing and Deployment
+
+Before sending your creation into the wild, test it. Familiarize yourself with the test framework from the [Baal repository](https://github.com/HausDAO/Baal). Dive into its behavior file, fixture file, and base test file.
+
+Once ready, compile and run tests. Ensure your `.env` file is primed with your Infura key and mnemonic private key.
+
+For deployment, there are available scripts to make your life easier. Also, consider the clone pattern — it's a real gas-saver when thinking about initialization.
+
+## Next Steps
+
+- [Shaman Contracts](/contracts/shamans)
+- [Moloch v3](https://moloch.daohaus.fun/) Documentation
+- [Shaman Examples](/contracts/shamans/examples)

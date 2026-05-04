@@ -1,7 +1,6 @@
 {
   "index": "Welcome",
-  "quickstart": "Quickstart",
-  "sdk": "SDK",
+  "networks": "Supported Networks",
   "subgraphs": "Subgraphs",
   "contracts": "Contracts",
   "contributing": "Contributing",
